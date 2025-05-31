@@ -4,35 +4,255 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anthony's Eagle Court of Honor</title>
-
-  <!-- Open Graph Meta (for Discord, Facebook, LinkedIn) -->
+  
   <meta property="og:title" content="You're Invited: Anthony DiBasilio's Eagle Scout Court of Honor" />
   <meta property="og:description" content="Join us Thursday, June 19th at 7:00 PM at The American Legion Post 134 in Morton Grove, IL" />
   <meta property="og:image" content="https://eagle.ajdev.pro/eagle.png" />
   <meta property="og:url" content="https://eagle.ajdev.pro" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter Card Meta (for Twitter/X, iMessage, Gmail) -->
+  
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="You're Invited: Anthony's Eagle Court of Honor" />
   <meta name="twitter:description" content="Join us Thursday, June 19th at 7:00 PM in Morton Grove, IL." />
   <meta name="twitter:image" content="https://eagle.ajdev.pro/eagle.png" />
-
-  <!-- Optional Favicon -->
-  <link rel="icon" href="https://eagle.ajdev.pro/aj.png" />
-
-  <!-- HubSpot Form Embed -->
+  
   <script src="https://js-na2.hsforms.net/forms/embed/242936631.js" defer></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #1e3a8a 0%, #dc2626 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    
+    .content {
+      padding: 50px 40px;
+      text-align: center;
+    }
+    
+    .eagle-badge {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+      border-radius: 50%;
+      margin: 0 auto 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+    }
+    
+    .eagle-badge svg {
+      width: 40px;
+      height: 40px;
+      fill: white;
+    }
+    
+    .title {
+      font-size: 2.5rem;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .subtitle {
+      font-size: 1.5rem;
+      color: #dc2626;
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+    
+    .event-details {
+      background: #f8fafc;
+      border-left: 4px solid #dc2626;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    
+    .detail-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+    
+    .detail-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .detail-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+      fill: #dc2626;
+      flex-shrink: 0;
+    }
+    
+    .detail-label {
+      font-weight: bold;
+      color: #1e3a8a;
+      min-width: 90px;
+    }
+    
+    .detail-value {
+      color: #374151;
+    }
+    
+    .address {
+      margin-top: 8px;
+      margin-left: 39px;
+      color: #6b7280;
+      font-style: italic;
+      line-height: 1.4;
+    }
+    
+    .divider {
+      width: 100px;
+      height: 2px;
+      background: linear-gradient(90deg, #1e3a8a 0%, #dc2626 100%);
+      margin: 40px auto;
+      border-radius: 1px;
+    }
+    
+    .rsvp-section {
+      background: #fef2f2;
+      border: 2px solid #fecaca;
+      border-radius: 8px;
+      padding: 30px;
+    }
+    
+    .rsvp-title {
+      color: #1e3a8a;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    
+    .rsvp-subtitle {
+      color: #6b7280;
+      margin-bottom: 25px;
+      font-size: 1rem;
+    }
+    
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+      
+      .content {
+        padding: 30px 25px;
+      }
+      
+      .title {
+        font-size: 2rem;
+      }
+      
+      .subtitle {
+        font-size: 1.2rem;
+      }
+      
+      .event-details,
+      .rsvp-section {
+        padding: 20px;
+      }
+      
+      .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+      
+      .detail-icon {
+        margin-bottom: 8px;
+      }
+      
+      .detail-label {
+        margin-bottom: 5px;
+      }
+      
+      .address {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
-<body style="margin: 0; font-family: sans-serif; background: #f7f7f7; padding: 20px;">
-  <div style="max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 12px;">
-    <h2 style="margin-top: 20px;">Anthony DiBasilio's Eagle Court of Honor</h2>
-    <p><strong>Date:</strong> Thursday, June 19th</p>
-    <p><strong>Time:</strong> 7:00 PM</p>
-    <p><strong>Location:</strong> The American Legion Post 134, Morton Grove, IL</p>
-    <hr />
-    <div style="width: 100%;">
-      <div class="hs-form-frame" data-region="na2" data-form-id="d31198bd-fe3b-4bea-8af3-240ceaa46ab0" data-portal-id="242936631"></div>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="eagle-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+      </div>
+      
+      <h1 class="title">Eagle Court of Honor</h1>
+      <p class="subtitle">Anthony DiBasilio</p>
+      
+      <div class="event-details">
+        <div class="detail-item">
+          <svg class="detail-icon" viewBox="0 0 24 24">
+            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+          </svg>
+          <div>
+            <span class="detail-label">Date:</span>
+            <span class="detail-value">Thursday, June 19th</span>
+          </div>
+        </div>
+        
+        <div class="detail-item">
+          <svg class="detail-icon" viewBox="0 0 24 24">
+            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/>
+          </svg>
+          <div>
+            <span class="detail-label">Time:</span>
+            <span class="detail-value">7:00 PM</span>
+          </div>
+        </div>
+        
+        <div class="detail-item">
+          <svg class="detail-icon" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          <div>
+            <span class="detail-label">Location:</span>
+            <span class="detail-value">The American Legion Post 134</span>
+            <div class="address">
+              6144 W. Dempster St.<br>
+              Morton Grove, IL 60053
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="rsvp-section">
+        <h3 class="rsvp-title">Please RSVP</h3>
+        <p class="rsvp-subtitle">Help us prepare for this special celebration</p>
+        <div class="hs-form-frame" data-region="na2" data-form-id="d31198bd-fe3b-4bea-8af3-240ceaa46ab0" data-portal-id="242936631"></div>
+      </div>
     </div>
   </div>
 </body>
